@@ -21,7 +21,7 @@ jobs:
 
   ci-build-test:
     name: CI build and unit test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - name: Mount bazel caches
@@ -59,7 +59,7 @@ jobs:
 
   ci-images:
     name: CI image tests
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - name: Mount bazel caches
